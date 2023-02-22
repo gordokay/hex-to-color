@@ -34,7 +34,14 @@ function generateColors() {
   })
 }
 
+function clearColors() {
+  while(colorsContainer.firstChild) {
+    colorsContainer.removeChild(colorsContainer.firstChild);
+  }
+}
+
 function showForm() {
+  clearColors();
   colorsSection.classList.add('hidden');
   form.classList.remove('hidden');
 }
