@@ -43,6 +43,7 @@ label {
 }
 
 button {
+  color: black;
   background-color: transparent;
   border: 1px solid black;
   padding-inline: 1.25rem;
@@ -60,6 +61,7 @@ button:active {
 }
 
 form > button {
+  --webkit-appearance: none;
   margin-top: 1rem;
   align-self: flex-end;
 }
