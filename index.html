@@ -5,9 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Hex to color</title>
+  <title>Hex to Color</title>
 </head>
 <body>
+  <header>
+    <h1>Hex to Color</h1>
+    <p>Enter hex codes into the box and get some blocks of color back. This is only useful if you save the hex codes of colors that you like in random text files and want to see them all at once.</p>
+  </header>
+  <main>
+    <form>
+      <label for="hex-codes">Add some hex codes</label>
+      <textarea name="hex-codes" id="hex-codes" cols="30" rows="10" required></textarea>
+      <button type="submit">See the colors</button>
+    </form>
+    <section class="hidden">
+      <div id="colors"></div>
+      <button type="button">Edit hex codes</button>
+    </section>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
