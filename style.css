@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  padding-block: 2rem;
+  font-family: 'Space Grotesk', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+body > * {
+  width: 50%;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header > p {
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding-inline: 1.25rem;
+  padding-block: 1rem;
+  box-shadow: -4px 4px black;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translate(-4px, 4px);
+  box-shadow: none;
+}
+
+form > button {
+  margin-top: 1rem;
+  align-self: flex-end;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section > button {
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+#colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#colors > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.color-block {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}
