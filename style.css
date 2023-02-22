@@ -74,9 +74,9 @@ section > button {
 }
 
 #colors {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 1rem;
 }
 
 #colors > div {
