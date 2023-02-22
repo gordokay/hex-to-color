@@ -18,18 +18,19 @@ body {
   gap: 2rem;
 }
 
-body > * {
+body > *,
+header > p {
   width: 50%;
+}
+
+header > p {
+  line-height: 1.5rem;
 }
 
 h1 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
-}
-
-header > p {
-  width: 50%;
 }
 
 form {
@@ -75,7 +76,8 @@ section > button {
 
 #colors {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  column-gap: 0.5rem;
   row-gap: 1rem;
 }
 
@@ -97,4 +99,18 @@ section > button {
 
 .hidden {
   display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  body > *,
+  header > p {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body > *,
+  header > p {
+    width: 80%;
+  }
 }
