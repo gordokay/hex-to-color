@@ -26,10 +26,10 @@ function generateColors() {
     const colorLabel = document.createElement('p');
     colorLabel.classList.add('color-label');
     colorLabel.textContent = color.charAt(0) === '#' ? color : '#' + color;
-    const colorBlock = document.createElement('div');
-    colorBlock.classList.add('color-block');
-    colorBlock.style.backgroundColor = color.charAt(0) === '#' ? color : '#' + color;
-    colorContainer.append(colorLabel, colorBlock);
+    const colorSwatch = document.createElement('div');
+    colorSwatch.classList.add('color-swatch');
+    colorSwatch.style.backgroundColor = color.charAt(0) === '#' ? color : '#' + color;
+    colorContainer.append(colorLabel, colorSwatch);
     colorsContainer.appendChild(colorContainer);
   })
 }
