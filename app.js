@@ -5,7 +5,7 @@ const colorsSection = document.querySelector('section');
 const colorsContainer = document.getElementById('colors');
 const editButton = document.querySelector('button[type="button"]');
 
-const regex = /#?[a-zA-Z0-9]{6}/g;
+const regex = /#?[a-fA-F0-9]{6}/g;
 
 form.addEventListener('submit', e => {
   e.preventDefault();
